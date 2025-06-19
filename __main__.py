@@ -330,7 +330,7 @@ def main():
                 if i is None:
                     continue
                 game.put(i, player)
-                player = (player + 1) % 2
+                player = 1 - player
                 redraw = True
 
         glViewport(0, 0, res, res)
